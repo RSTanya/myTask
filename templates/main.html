@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+
+
+{% block title %}
+  myTask
+{%endblock%}
+
+{% block body %}
+
+  <h1>
+      Список задач
+  </h1>
+
+
+  {% for task in tasks %}
+    <input type = "checkbox"> {{task}}
+    <br>
+  {%endfor%}
+
+  <hr>
+
+    <a href="/new/" >
+        Добавить новую задачу
+    </a>
+    <br>
+<br>
+
+    <a href="/delete/" >
+        Очистить список задач
+    </a>
+
+
+{%endblock%}

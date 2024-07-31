@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+
+{% block title %}
+  myTask
+{%endblock%}
+
+{% block body %}
+
+  <h1>
+      Вы уверены, что хотите очистить список?
+  </h1>
+
+
+
+   <div style="float: left;">
+<form action="/" method="post">
+    <input type = "submit" value="Да! Удаляй!">
+</form>
+
+   </div>
+
+
+<form action="/" >
+    <input type = "submit" value="Нет, я передумал">
+</form>
+
+
+
+{%endblock%}
